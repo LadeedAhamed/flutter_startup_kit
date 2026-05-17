@@ -38,6 +38,4 @@ class LocalizationService extends ChangeNotifier {
       await setLocale(const Locale('en'));
     }
   }
-
-  static String? get languageCode => null;
 }

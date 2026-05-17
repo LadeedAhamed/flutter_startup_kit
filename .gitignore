@@ -1,32 +1,52 @@
-# Dependencies
-.packages
-.pub/
-.pub-cache/
-
-# Build
-build/
-*.apk
-*.aab
-*.app
-*.ipa
-
-# IDE
-.vscode/
-.idea/
-*.iml
+# Miscellaneous
+*.class
+*.log
+*.pyc
 *.swp
-*.swo
-
-# OS
 .DS_Store
-Thumbs.db
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
 
-# Dart
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VSCode
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
-.pub-preload-cache/
-
-# Flutter
-.flutter-plugins
 .flutter-plugins-dependencies
-*.lock
-.metadata
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.config.dart
+
+# Environment
+.env
+.env.local
