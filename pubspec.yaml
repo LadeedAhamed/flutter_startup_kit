@@ -1,6 +1,6 @@
 name: flutter_startup_kit
 description: Generate production-ready Flutter apps with Clean Architecture, Bloc, and enterprise-grade standards.
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/LadeedAhamed/flutter_startup_kit
 repository: https://github.com/LadeedAhamed/flutter_startup_kit
 issue_tracker: https://github.com/LadeedAhamed/flutter_startup_kit/issues
