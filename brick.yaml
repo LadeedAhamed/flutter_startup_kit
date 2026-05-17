@@ -1,0 +1,21 @@
+name: flutter_startup_kit
+description: A production-ready Flutter startup kit with Clean Architecture, Bloc, and enterprise-grade standards.
+version: 1.0.0
+environment:
+  mason: ">=0.1.0"
+vars:
+  name:
+    type: string
+    description: Project name (snake_case)
+    default: my_app
+    prompt: What is the project name?
+  description:
+    type: string
+    description: Project description
+    default: A Flutter application
+    prompt: What is the project description?
+  org_name:
+    type: string
+    description: Organization name (for Android package / iOS bundle)
+    default: com.example
+    prompt: What is the organization name (e.g., com.mycompany)?

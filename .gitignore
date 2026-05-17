@@ -1,0 +1,32 @@
+# Dependencies
+.packages
+.pub/
+.pub-cache/
+
+# Build
+build/
+*.apk
+*.aab
+*.app
+*.ipa
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dart
+.dart_tool/
+.pub-preload-cache/
+
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+*.lock
+.metadata
