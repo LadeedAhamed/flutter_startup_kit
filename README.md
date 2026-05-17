@@ -4,40 +4,31 @@ A production-ready, enterprise-grade Flutter startup kit with Clean Architecture
 
 ## 🧩 Usage
 
-### Prerequisites
-
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) >= 3.11.5
-- [Mason CLI](https://pub.dev/packages/mason_cli)
-
-### Install Mason CLI
+### Install
 
 ```bash
-dart pub global activate mason_cli
+dart pub global activate flutter_startup_kit
 ```
 
 ### Generate a new project
 
 ```bash
-# From this repository
-mason add flutter_startup_kit --git-url https://github.com/YOUR_USERNAME/flutter_startup_kit.git
-mason make flutter_startup_kit
-
-# Or directly from the brick
-mason make flutter_startup_kit --git-url https://github.com/YOUR_USERNAME/flutter_startup_kit.git
+flutter_startup_kit create my_app
 ```
 
-### Follow the prompts
+Or with custom options:
 
 ```bash
-? What is the project name? (my_app) your_app_name
-? What is the project description? (A Flutter application) Your app description
-? What is the organization name? (com.example) com.yourcompany
+flutter_startup_kit create my_app \
+  --org com.mycompany \
+  --description "My production Flutter app"
 ```
 
 ### Run your new app
 
 ```bash
-cd your_app_name
+cd my_app
+flutter pub get
 flutter run --flavor dev -t lib/main_dev.dart
 ```
 
