@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
 import '../bloc/feature_bloc.dart';
-import '../../domain/usecases/get_items_usecase.dart';
-import '../../data/repositories/feature_repository_impl.dart';
 
 class FeaturePage extends StatelessWidget {
   const FeaturePage({super.key});
@@ -10,8 +9,7 @@ class FeaturePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => FeatureBloc(getItemsUseCase: GetItemsUseCase(FeatureRepositoryImpl()))
-        ..add(GetItemsEvent()),
+      create: (context) => GetIt.instance<FeatureBloc>()..add(GetItemsEvent()),
       child: Scaffold(
         appBar: AppBar(title: const Text('Feature')),
         body: BlocBuilder<FeatureBloc, FeatureState>(
